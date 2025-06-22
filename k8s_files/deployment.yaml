@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pandacloud-app
+  name: rakeshdevops-app
   labels:
-    app: pandacloud-app
+    app: rakeshdevops-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pandacloud-app
+      app: rakeshdevops-app
   template:
     metadata:
       labels:
-        app: pandacloud-app
+        app: rakeshdevops-app
     spec:
       containers:
-      - name: pandacloud-container
+      - name: rakeshdevops-container
         image: public.ecr.aws/p2j8v6t3/rakesh-devops-poc:latest
         ports:
         - containerPort: 3000
